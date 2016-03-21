@@ -1,0 +1,53 @@
+doctype html
+html.no-js(lang='')
+  head
+    meta(charset='utf-8')
+    meta(content='ie=edge', http-equiv='x-ua-compatible')
+    title JS Todo list
+    meta(content='', name='description')
+    meta(content='width=device-width, initial-scale=1', name='viewport')
+    link(href='apple-touch-icon.png', rel='apple-touch-icon')
+    // Place favicon.ico in the root directory
+    link(href='css/normalize.css', rel='stylesheet')
+    link(href='css/main.css', rel='stylesheet')
+    link(href='css/app.css', rel='stylesheet')
+  body
+    .main
+      .header
+        h1 simple todo lists
+        p from ruby garage
+      .content
+        section.list
+          article
+            .todo-header
+              h3 Complete the test task for JS course
+              ul.hidden
+                li
+                  a.todo-action-edit(href='#', title='Edit') Edit
+                li
+                  a.todo-action-remove(href='#', title='Delete') Delete
+              input(name='', type='text')
+            .todo-bar
+              .todo-bar-new
+                form
+                  input(name='', placeholder='Start typing here to create a task...', type='text')
+                  button(type='button') Add Task
+            .todo-list
+              table
+                tbody
+                  tr
+                    td.todo-list-checkbox
+                      input(type='checkbox')
+                    td.todo-list-divider
+                    td.todo-list-task
+                      p Open this mock-up in Adobe Fireworks
+                    td.todo-list-actions
+                      ul.hidden
+                        li
+                          a.todo-list-task-sort(href='#') Sort
+                        li
+                          a.todo-list-task-edit(href='#') Edit
+                        li
+                          a.todo-list-task-delete(href='#') Delete
+        .new-todo
+          a(href='#') Add TODO list
