@@ -165,3 +165,9 @@
       }
 ]
 ```
+
+### Полезные ресурсы
+- [codecademy](https://www.codecademy.com/learn/javascript)
+- [codeschool](https://www.codeschool.com/learn/javascript)
+- [2ality](http://www.2ality.com)
+- [jsunderhood](https://jsunderhood.ru)
